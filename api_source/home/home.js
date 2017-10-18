@@ -1,7 +1,7 @@
 /**
  * @api {get} /product/:category_id List Product of Category
  * @apiName     Get list product
- * @apiGroup    Product
+ * @apiGroup    Home
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token
  *

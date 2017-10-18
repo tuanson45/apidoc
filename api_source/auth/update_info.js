@@ -1,17 +1,18 @@
 /**
  * @api {get} /product/:category_id List Product of Category
  * @apiName     Get list product
- * @apiGroup    Product
+ * @apiGroup    Auth
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token
  *
- * @apiParam    (Params)    {number}    page        Page for load more function (start = 0)
- * @apiParam    (Params)    {string}    sort_by     Enum: ['new', 'ranking']
+ * @apiParam    (Params)    {number}    uid         User id
+ * @apiParam    (Params)    {string}    name        Enum: ['new', 'ranking']
+ * @apiParam    (Params)    {number}    gender      Enum: ['male', 'female']
  *
  * @apiSuccess  (Response)  {number}    status      Request status
  * @apiSuccess  (Response)  {number}    error       Request Error (0: success, 1: error)
  * @apiSuccess  (Response)  {string}    message     Request Message
- * @apiSuccess  (Response)  {Array}     data        Array of Product object
+ * @apiSuccess  (Response)  {Object}    data        {}
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
@@ -21,9 +22,7 @@
  *       "message"  : success,
  *       "data"     :
  *          {
- *              "_id"   : "234535545345",
- *              "pid"   : 1,
- *              "name"  : "name"
+ *
  *          }
  *     }
  *

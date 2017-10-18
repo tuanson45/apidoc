@@ -5,6 +5,8 @@
  *
  * @apiParam    (Header)    {string}    x-access-token       token = null
  *
+ * @apiParam    (Params)    {string}    email       Email address
+ *
  * @apiSuccess  (Response)  {number}    status      Request status
  * @apiSuccess  (Response)  {number}    error       Request Error (0: success, 1: error)
  * @apiSuccess  (Response)  {string}    message     Request Message
