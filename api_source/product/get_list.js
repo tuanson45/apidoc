@@ -1,7 +1,9 @@
 /**
- * @api {get} /product List Product
+ * @api {get} /product/:category_id List Product of Category
  * @apiName     Get list product
  * @apiGroup    Product
+ *
+ * @apiParam    (Header)    {string}    x-access-token       token = access token
  *
  * @apiParam    (Params)    {number}    page        Page for load more function (start = 0)
  * @apiParam    (Params)    {string}    sort_by     Enum: ['new', 'ranking']

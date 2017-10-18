@@ -1,16 +1,17 @@
 /**
- * @api {get} /product/:id Detail Product
- * @apiName Detail product
- * @apiGroup Product
+ * @api {get} /product/:category_id List Product of Category
+ * @apiName     Get list product
+ * @apiGroup    Product
  *
- * @apiParam (Params) {string} id Product id
+ * @apiParam    (Header)    {string}    x-access-token       token = access token
  *
- * @apiSuccess (Response) {number} status Request status
- * @apiSuccess (Response) {number} error Request Error (0: success, 1: error)
- * @apiSuccess (Response) {string} message Request Message
- * @apiSuccess (Response) {Object} data Data object
- * @apiSuccess (Response) {Object} data.product Product object
- * @apiSuccess (Response) {Array} data.list_product List Product object in same category
+ * @apiParam    (Params)    {number}    page        Page for load more function (start = 0)
+ * @apiParam    (Params)    {string}    sort_by     Enum: ['new', 'ranking']
+ *
+ * @apiSuccess  (Response)  {number}    status      Request status
+ * @apiSuccess  (Response)  {number}    error       Request Error (0: success, 1: error)
+ * @apiSuccess  (Response)  {string}    message     Request Message
+ * @apiSuccess  (Response)  {Array}     data        Array of Product object
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
@@ -20,35 +21,16 @@
  *       "message"  : success,
  *       "data"     :
  *          {
- *              "product"   : {
- *                  "_id"   : "234535545345",
- *                  "pid"   : 1,
- *                  "name"  : "name"
- *              },
- *              "list_product"   : [
- *                  {
- *                      "_id"   : "234535545345",
- *                      "pid"   : 1,
- *                      "name"  : "name"
- *                  },
- *                   {
- *                      "_id"   : "234535545345",
- *                      "pid"   : 1,
- *                      "name"  : "name"
- *                  },
- *                   {
- *                      "_id"   : "234535545345",
- *                      "pid"   : 1,
- *                      "name"  : "name"
- *                  },
- *              ],
+ *              "_id"   : "234535545345",
+ *              "pid"   : 1,
+ *              "name"  : "name"
  *          }
  *     }
  *
- * @apiError UserNotFound The id of the User was not found.
- * @apiError UserError The id of the User was not found.
+ * @apiError    UserNotFound The id of the User was not found.
+ * @apiError    UserError The id of the User was not found.
  *
- * @apiErrorExample Error-Response:
+ * @apiErrorExample     Error-Response:
  *     HTTP/1.1 404 Not Found
  *     {
  *       "status"   :500,
