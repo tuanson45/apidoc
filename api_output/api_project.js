@@ -1,1 +1,1 @@
-define({  "name": "docsapi",  "version": "0.0.0",  "description": "",  "sampleUrl": false,  "defaultVersion": "0.0.0",  "apidoc": "0.3.0",  "generator": {    "name": "apidoc",    "time": "2017-10-18T04:45:13.932Z",    "url": "http://apidocjs.com",    "version": "0.17.6"  }});
+define({  "name": "docsapi",  "version": "0.0.0",  "description": "",  "sampleUrl": false,  "defaultVersion": "0.0.0",  "apidoc": "0.3.0",  "generator": {    "name": "apidoc",    "time": "2017-10-18T08:22:38.344Z",    "url": "http://apidocjs.com",    "version": "0.17.6"  }});

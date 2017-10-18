@@ -1,17 +1,18 @@
 /**
- * @api {get} /product/:category_id List Product of Category
- * @apiName     Get list product
+ * @api {get} /home Home
+ * @apiName     Home
  * @apiGroup    Home
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token
  *
- * @apiParam    (Params)    {number}    page        Page for load more function (start = 0)
- * @apiParam    (Params)    {string}    sort_by     Enum: ['new', 'ranking']
- *
- * @apiSuccess  (Response)  {number}    status      Request status
- * @apiSuccess  (Response)  {number}    error       Request Error (0: success, 1: error)
- * @apiSuccess  (Response)  {string}    message     Request Message
- * @apiSuccess  (Response)  {Array}     data        Array of Product object
+ * @apiSuccess  (Response)  {number}    status              Request status
+ * @apiSuccess  (Response)  {number}    error               Request Error (0: success, 1: error)
+ * @apiSuccess  (Response)  {string}    message             Request Message
+ * @apiSuccess  (Response)  {Object}    data                Object data result
+ * @apiSuccess  (Response)  {Array}     data.list_keyword   Danh sach suggest keyword
+ * @apiSuccess  (Response)  {Array}     data.list_like      Danh sach Product user da thich (khi token != null)
+ * @apiSuccess  (Response)  {Array}     data.top_keyword    Danh sach top keyword
+ * @apiSuccess  (Response)  {Array}     data.categories     Danh sach Category trong he thong
  *
  * @apiSuccessExample Success-Response:
  *     HTTP/1.1 200 OK
@@ -21,9 +22,10 @@
  *       "message"  : success,
  *       "data"     :
  *          {
- *              "_id"   : "234535545345",
- *              "pid"   : 1,
- *              "name"  : "name"
+ *              "list_keyword"  : [],
+ *              "list_like"     : [],
+ *              "top_keyword"   : [],
+ *              "categories"    : []
  *          }
  *     }
  *
