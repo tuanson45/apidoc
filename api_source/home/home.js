@@ -1,6 +1,6 @@
 /**
- * @api {get} /home Home
- * @apiName     Home
+ * @api {get} /home home
+ * @apiName     home
  * @apiGroup    Home
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token

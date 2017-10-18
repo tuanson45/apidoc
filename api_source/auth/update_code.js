@@ -1,6 +1,6 @@
 /**
- * @api {get} /register/code Update code
- * @apiName     Update code
+ * @api {put} /register/code update code
+ * @apiName     update code
  * @apiGroup    Auth
  *
  * @apiParam    (Header)    {string}    x-access-token       token = null

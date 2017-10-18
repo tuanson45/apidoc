@@ -1,7 +1,7 @@
 /**
- * @api {get} /user/profile user profile
- * @apiName     user profile
- * @apiGroup    User
+ * @api {get} /product/:product_id/item_sell list selling item
+ * @apiName     list selling item
+ * @apiGroup    Product
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token
  *

@@ -1,6 +1,6 @@
 /**
- * @api {get} /product/:category_id List Product of Category
- * @apiName     Get list product
+ * @api {get} /keyword/most the most keyword
+ * @apiName     the most keyword
  * @apiGroup    Keyword
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token

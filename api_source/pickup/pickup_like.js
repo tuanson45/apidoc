@@ -1,6 +1,6 @@
 /**
- * @api {get} /product/:category_id List Product of Category
- * @apiName     Get list product
+ * @api {post} /pickup/:pickup_id/like like pickup
+ * @apiName     like pickup
  * @apiGroup    Pickup
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token

@@ -1,6 +1,6 @@
 /**
- * @api {post} /register/email Input email
- * @apiName     Input email
+ * @api {post} /register/email input email
+ * @apiName     input email
  * @apiGroup    Auth
  *
  * @apiParam    (Header)    {string}    x-access-token       token = null

@@ -1,6 +1,6 @@
 /**
- * @api {get} /product/:category_id List Product of Category
- * @apiName     Get list product
+ * @api {get} /user/cart list product in cart
+ * @apiName     list product in cart
  * @apiGroup    User
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token

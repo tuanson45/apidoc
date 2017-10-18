@@ -1,6 +1,6 @@
 /**
- * @api {post} /login Login
- * @apiName     Login
+ * @api {post} /login login
+ * @apiName     login
  * @apiGroup    Auth
  *
  * @apiParam    (Header)    {string}    x-access-token       token = null

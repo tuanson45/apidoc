@@ -1,13 +1,14 @@
 /**
- * @api {get} /product/:category_id List Product of Category
- * @apiName     Get list product
+ * @api {put} /register/info update information
+ * @apiName     update information
  * @apiGroup    Auth
  *
- * @apiParam    (Header)    {string}    x-access-token       token = access token
+ * @apiParam    (Header)    {string}    x-access-token       token = null
  *
  * @apiParam    (Params)    {number}    uid         User id
  * @apiParam    (Params)    {string}    name        Enum: ['new', 'ranking']
  * @apiParam    (Params)    {number}    gender      Enum: ['male', 'female']
+ * @apiParam    (Params)    {number}    inviteId    Invite User id
  *
  * @apiSuccess  (Response)  {number}    status      Request status
  * @apiSuccess  (Response)  {number}    error       Request Error (0: success, 1: error)

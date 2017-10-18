@@ -1,6 +1,6 @@
 /**
- * @api {get} /product/:category_id List Product of Category
- * @apiName     Get list product
+ * @api {get} /notification/news list news
+ * @apiName     list news
  * @apiGroup    Notification
  *
  * @apiParam    (Header)    {string}    x-access-token       token = access token
