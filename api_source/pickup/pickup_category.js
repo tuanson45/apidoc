@@ -16,7 +16,33 @@
  *       "status"   : 200,
  *       "error"    : 0,
  *       "message"  : success,
- *       "data"     : []
+ *       "data"     : [
+ *          {
+ *              "_id"       : "id",
+ *              "name"      : "name",
+ *              "createdAt" : "CreatedAt",
+ *          },
+ *          {
+ *              "_id"       : "id",
+ *              "name"      : "name",
+ *              "createdAt" : "CreatedAt",
+ *          },
+ *          {
+ *              "_id"       : "id",
+ *              "name"      : "name",
+ *              "createdAt" : "CreatedAt",
+ *          },
+ *          {
+ *              "_id"       : "id",
+ *              "name"      : "name",
+ *              "createdAt" : "CreatedAt",
+ *          },
+ *          {
+ *              "_id"       : "id",
+ *              "name"      : "name",
+ *              "createdAt" : "CreatedAt",
+ *          }
+ *       ]
  *     }
  *
  * @apiError    UserNotFound The id of the User was not found.

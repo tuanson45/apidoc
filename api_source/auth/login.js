@@ -22,11 +22,16 @@
  *       "message"  : success,
  *       "data"     :
  *          {
- *              "token"   : "234535545345",
+ *              "token"   : "access token",
  *              "user"   : {
- *                  "_id" : "23bsdfksdjwhefg",
- *                  "uid" : 123234,
- *                  "username" : "name"
+ *                  "_id"      :"id",
+ *                  "email"    :"test@gmail.com",
+ *                  "name"     :"tester",
+ *                  "point"    :"Point",
+ *                  "avatar"   :{
+ *                      "origin":"origin image",
+ *                      "thumb":"thumbnail image"
+ *                  }
  *              }
  *          }
  *     }

@@ -22,10 +22,76 @@
  *       "message"  : success,
  *       "data"     :
  *          {
- *              "list_keyword"  : [],
- *              "list_like"     : [],
- *              "top_keyword"   : [],
- *              "categories"    : []
+ *              "list_keyword"  : [
+ *                  {
+ *                      "_id"  : "id",
+ *                      "name" : "name"
+ *                  },
+ *                  {
+ *                      "_id"  : "id",
+ *                      "name" : "name"
+ *                  },
+ *                  {
+ *                      "_id"  : "id",
+ *                      "name" : "name"
+ *                  }
+ *              ],
+ *              "list_like"     : [
+ *                   {
+ *                      "_id"          : "id",
+ *                      "price"        : 1000,
+ *                      "createdAt"    : "CreatedAt",
+ *                      "description"  : "Description",
+ *                      "barcode"      : "Barcode",
+ *                      "code"         : "Code",
+ *                      "images"       : [{
+ *                          "origin"    : "origin image",
+ *                          "thumb"     : "thumbnail image"
+ *                      }],
+ *                      "attributes"   : [{
+ *                         "name" : "attr name",
+ *                         "value": "attr value"
+ *                     }],
+ *                      "avatar"       : {
+ *                          "origin" : "origin image",
+ *                          "thumb"  : "thumbnail image"
+ *                      }
+ *                  },
+ *              ],
+ *              "top_keyword"   : [
+ *                   {
+ *                      "_id"  : "id",
+ *                      "name" : "name"
+ *                  },
+ *                  {
+ *                      "_id"  : "id",
+ *                      "name" : "name"
+ *                  },
+ *                  {
+ *                      "_id"  : "id",
+ *                      "name" : "name"
+ *                  }
+ *              ],
+ *              "categories"    : [
+ *                  {
+ *                      "_id"        : "id",
+ *                      "name"       : "name",
+ *                      "createdAt"  : "CreatedAt",
+ *                      "image"      : {
+ *                          "origin" : "origin image",
+ *                          "thumb"  : "thumbnail image"
+ *                      }
+ *                  },
+ *                  {
+ *                      "_id"        : "id",
+ *                      "name"       : "name",
+ *                      "createdAt"  : "CreatedAt",
+ *                      "image"      : {
+ *                          "origin" : "origin image",
+ *                          "thumb"  : "thumbnail image"
+ *                       }
+ *                   }
+ *              ]
  *          }
  *     }
  *

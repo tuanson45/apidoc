@@ -1,6 +1,6 @@
 /**
- * @api {get} /pickup/:category_id pickup
- * @apiName     pickup
+ * @api {get} /pickup/:category_id pickup of category
+ * @apiName     pickup of category
  * @apiGroup    Pickup
  *
  * @apiParam    (Header)    {string}    x-access-token       token = null
@@ -18,7 +18,40 @@
  *       "status"   : 200,
  *       "error"    : 0,
  *       "message"  : success,
- *       "data"     : []
+ *       "data"     : [
+ *           {
+ *              "_id"               : "id",
+ *              "name"              : "pickup name",
+ *              "createdAt"         : "CreatedAt",
+ *              "description"       : "Description",
+ *              "PickupCategoryID"  : "PickupCategoryID",
+ *              "image"             : {
+ *                  "origin" : "origin image",
+ *                  "thumb"  : "thumbnail image"
+ *           },
+ *           {
+ *               "_id"               : "id",
+ *               "name"              : "pickup name",
+ *               "createdAt"         : "CreatedAt",
+ *               "description"       : "Description",
+ *               "PickupCategoryID"  : "PickupCategoryID",
+ *               "image"             : {
+ *                  "origin" : "origin image",
+ *                  "thumb"  : "thumbnail image"
+ *               }
+ *           },
+ *           {
+ *              "_id"               : "id",
+ *              "name"              : "pickup name",
+ *              "createdAt"         : "CreatedAt",
+ *              "description"       : "Description",
+ *              "PickupCategoryID"  : "PickupCategoryID",
+ *              "image"             : {
+ *                  "origin" : "origin image",
+ *                  "thumb"  : "thumbnail image"
+ *              }
+ *           }
+ *       ]
  *     }
  *
  * @apiError    UserNotFound The id of the User was not found.
