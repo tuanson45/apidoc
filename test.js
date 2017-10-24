@@ -21,7 +21,10 @@ let response = {
             origin: 'origin'
         }, {
             thumb: 'thumb',
-            origin: 'origin'
+            origin: {
+                a: 'asad',
+                b: 'adsad'
+            }
         }]
     }
 };
@@ -89,7 +92,7 @@ const createResponseFromObject = (keyObject, data) => {
                     response += ` * @apiSuccess (Response) {${typeof obj[key]}} ${keyObject}.${key}  params description\n`;
                 }
                 if (typeof obj[key] === 'object') {
-                    response += createResponseFromObject(key, obj[key]);
+                    response += createResponseFromObject(`${keyObject}.${key}`, obj[key]);
                 }
             });
             return response;
@@ -101,16 +104,23 @@ const createResponseFromObject = (keyObject, data) => {
     }
 };
 
+
+const createExample = (response) => {
+    let text = JSON.stringify(response, null, 4);
+    return text.split('\n').join('\n *');
+};
+
 function create(apiName, router, method, param, response) {
     let paramContent = createParams(param);
     let responseContent = createResponse(response);
     return `/**
  * @api {${method}} ${router} ${apiName}
  * @apiName  ${apiName}
- * @apiGroup ${apiName}\n` + paramContent + `\n` + responseContent + ` */`;
+ * @apiGroup ${apiName}\n *\n` + paramContent + ` *\n` + responseContent
+        + ` *\n * @apiSuccessExample Success-Response:\n * \n *` + createExample(response) + `\n */`;
 }
 
-var gen = create('demo', '/demo', 'get', param, response);
+let gen = create('demo', '/demo', 'get', param, response);
 
 let createJs = require('./generate/write2File');
 createJs('gen_api', gen);
