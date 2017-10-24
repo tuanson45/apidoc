@@ -1,40 +1,39 @@
 {
   "users": [
     {
-      "id": 91116551,
-      "email": "Cathrine_Grimes22@hotmail.com",
-      "lastName": "Pouros",
-      "firstName": "Randall"
+      "id": 55170740,
+      "firstName": "Cary",
+      "lastName": "Vandervort",
+      "email": "Brittany.Kertzmann@hotmail.com"
     },
     {
-      "id": 58429994,
-      "email": "Drew_Swaniawski@gmail.com",
-      "nostrud7e": -41577573,
-      "do01": -34143474
+      "id": 71201202,
+      "firstName": "Ella",
+      "lastName": "Bartoletti",
+      "email": "Perry.Tromp66@hotmail.com"
     },
     {
-      "id": 44645210,
-      "email": "Lelia.Weimann82@yahoo.com",
-      "firstName": "Antonio",
-      "tempor39": -16317537
+      "id": 51983476,
+      "firstName": "Viola",
+      "lastName": "Botsford",
+      "email": "Jabari_Walker76@gmail.com"
     },
     {
-      "id": 78119165,
-      "email": "Astrid.Towne33@gmail.com",
-      "lastName": "Willms",
-      "consectetur5f": 34911763
-    },
-    {
-      "id": 69841586,
-      "email": "Tyree.Jones39@hotmail.com",
-      "lastName": "Boyle",
-      "dolor2": true
+      "id": 10425344,
+      "firstName": "Alexis",
+      "lastName": "Wolff",
+      "email": "Clint_Heaney@gmail.com"
     }
   ],
   "user": {
-    "id": 93319755,
-    "email": "Oliver_Welch@yahoo.com",
-    "firstName": "Ernest",
-    "lastName": "Gleason"
+    "data": {
+      "id": 38440815,
+      "firstName": "Missouri",
+      "lastName": "Kilback",
+      "email": "Amya.Auer@yahoo.com"
+    },
+    "message": "success",
+    "status": 200,
+    "error": "0"
   }
 }

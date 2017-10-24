@@ -1,4 +1,6 @@
-var user = require('./userSchema');
+var getData = require('./schema/data');
+
+var user = require('./schema/user');
 
 var schema = {
     "type": "object",
@@ -9,7 +11,7 @@ var schema = {
             "maxItems": 5,
             "items": user
         },
-        "user": user
+        "user": getData(user)
     },
     "required": ["users", "user"]
 };

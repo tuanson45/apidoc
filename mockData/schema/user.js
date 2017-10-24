@@ -19,7 +19,7 @@ var user = {
             "faker": "internet.email"
         }
     },
-    "required": ["id", "type", "lastname", "email"]
+    "required": ["id", "firstName", "lastName", "email"]
 };
 
 

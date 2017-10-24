@@ -7,7 +7,7 @@
     "apidoc": "apidoc -i api_source -o api_output",
     "generate-mock-data": "node mockData/generateMockData",
     "prestart-mockapi": "npm run generate-mock-data",
-    "start-mockapi": "json-server --watch api/db.json --port 3001"
+    "mockapi": "json-server --watch api/db.json --port 3001"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
